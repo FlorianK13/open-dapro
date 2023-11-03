@@ -21,5 +21,5 @@ jobs:
           path: .cache
       - run: rm pyproject.toml
       - run: ls -l 
-      #- run: pip install --upgrade -e .["dev"]
-      #- run: mkdocs gh-deploy --force
+      - run: pip install --upgrade -e .["dev"]
+      - run: mkdocs gh-deploy --force
