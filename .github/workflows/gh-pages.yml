@@ -20,5 +20,5 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: ls -l 
-      - run: pip install --upgrade -e .["dev"]
+      - run: pip install mkdocstrings[python] mkdocs-material 
       - run: mkdocs gh-deploy --force
